@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/design.css">
+</head>
+
+<body>
+	<form name="regform" action="/userSignup" method="POST">
+		<div class="container">
+			<center>
+				<br>
+				<img src="/imgs/logo.jpeg" alt="Company Logo" style="width: 100px; height: 100px">
+				<h1>Sign Up</h1>
+				<p style="color: red; font-size: 10px;"><%- error %></p>
+				<table>
+					<tr>
+						<td><label for="fname"><b>First Name : </b></label></td>
+						<td><input type="text" placeholder="Enter First Name" name="fname" id="fname" ></td>
+					</tr>
+					<tr>
+						<td><label for="lname"><b>Last Name : </b></label></td>
+						<td><input type="text" placeholder="Enter Last Name" name="lname" id="lname" ></td>
+					</tr>
+					<tr>
+						<td><label for="phone"><b>Number : </b></label></td>
+						<td><input type="tel" placeholder="1234567890" name="phone" id="phone"
+								pattern="[0-9]{10}" ></td>
+					</tr>
+					<tr>
+						<td><label for="city"><b>City : </b></label></td>
+						<td><input type="text" placeholder="Enter City Name" name="city" id="city" ></td>
+					</tr>
+					<tr>
+						<td><label for="email"><b>Email : </b></label></td>
+						<td colspan="3"><input type="email" placeholder="Enter Email" name="email" id="email" >
+						</td>
+					</tr>
+					<tr>
+						<td><label for="uname"><b>Username : </b></label></td>
+						<td colspan="3"><input type="text" placeholder="Enter Username" name="uname" id="uname"
+								></td>
+					</tr>
+					<tr>
+						<td><label for="pwd"><b>Password : </b></label></td>
+						<td><input type="password" placeholder="Enter Password" name="pwd" id="pwd"></td>
+					</tr>
+					<tr>
+						<td><label for="repwd"><b>Confirm Password : </b></label></td>
+						<td><input type="password" placeholder="Confirm Password" name="repwd" id="repwd">
+						</td>
+					</tr>
+				</table>
+
+				<p>By creating an account you agree to our <a href="#">Terms & Condition</a></p>
+
+				<button type="submit" class="registerbtn"><strong>Sign Up</strong></button>
+				<button type="cancel" class="cancelbtn"><strong>Cancel</strong></button> <br> <br>
+
+
+			</center>
+
+			<hr>
+
+			<div class="container2 signin">
+				<p>Already have account? <a href="/signin">Sign In</a></p>
+			</div>
+
+		</div>
+
+	</form>
+</body>
+
+</html>

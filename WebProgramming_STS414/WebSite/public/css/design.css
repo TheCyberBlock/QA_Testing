@@ -1,0 +1,128 @@
+body{
+	font-family: Arial, Helvertica, sans-serif;
+	background-color: white;
+	margin: 5% 30% 5% 30% ;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	padding: 15px;
+	background-color: white;
+	box-shadow: 10px 10px 100px 15px grey;
+}
+
+.container2{
+	padding: 15px;
+	background-color: white;
+}
+
+h1{
+	font-family: courier;
+	color: rgb(7, 7, 175);
+	font-size: 50px;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email]{
+	/* width: 90	%; */
+	padding: 15px;
+	margin: 10px 5px 22px 5px;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus{
+	background-color: #ddd;
+	outline: none;
+}
+
+.registerbtn{
+	background-color: #ddd;
+	font-size: 15px;
+	color: rgb(7, 7, 175); 
+	padding: 16px 20px;
+	margin: 16px;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover{
+	background-color: rgb(7, 7, 175);
+	color: white;
+}
+
+.cancelbtn{
+	background-color: #ddd;
+	font-size: 15px;
+	color: rgb(7, 7, 175);
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.cancelbtn:hover{
+	background-color: red;
+	color: white;
+}
+
+a{
+	color: blue;
+}
+
+.signin{
+	text-align: center;
+}	
+
+
+h2{
+	font-family: courier;
+	color: rgb(7, 7, 175);
+	font-size: 40px;
+}
+
+.loginbtn{
+	background-color: #ddd;
+	font-size: 15px;
+	color: rgb(7, 7, 175); 
+	padding: 16px 20px;
+	margin: 16px;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.loginbtn:hover{
+	background-color: rgb(7, 7, 175);
+	color: white;
+}
+
+.submitbtn{
+	background-color: #ddd;
+	font-size: 15px;
+	color: rgb(7, 7, 175); 
+	padding: 16px 20px;
+	margin: 16px;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.submitbtn:hover{
+	background-color: rgb(7, 7, 175);
+	color: white;
+}
+
+.container3 {
+	background-color: white;
+	padding: 15px;
+}

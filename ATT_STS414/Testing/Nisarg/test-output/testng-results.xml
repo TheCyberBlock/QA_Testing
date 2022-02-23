@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-30T19:55:32 EDT" name="Default suite" finished-at="2021-03-30T19:55:35 EDT" duration-ms="2957">
+    <groups>
+    </groups>
+    <test started-at="2021-03-30T19:55:32 EDT" name="Default test" finished-at="2021-03-30T19:55:35 EDT" duration-ms="2957">
+      <class name="testing.CPF_testNg1">
+        <test-method is-config="true" signature="beforeAnyTests()[pri:0, instance:testing.CPF_testNg1@34f7cfd9]" started-at="2021-03-30T19:55:32 EDT" name="beforeAnyTests" finished-at="2021-03-30T19:55:32 EDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeAnyTests -->
+        <test-method signature="cpf1()[pri:0, instance:testing.CPF_testNg1@34f7cfd9]" started-at="2021-03-30T19:55:32 EDT" name="cpf1" finished-at="2021-03-30T19:55:35 EDT" duration-ms="2925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpf1 -->
+      </class> <!-- testing.CPF_testNg1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

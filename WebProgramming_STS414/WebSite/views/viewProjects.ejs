@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/animate.css">
+
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        table {
+            table-layout: fixed;
+        }
+        
+        th {
+            word-wrap: break-word;
+            word-break: break-all;
+            max-width: 500px;
+            padding: 10px;
+            color: black;
+        }
+        
+        td {
+            word-wrap: break-word;
+            word-break: break-all;
+            max-width: 500px;
+            padding: 10px;
+        }
+    </style>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md d-flex align-items-center">
+                    <p class="mb-0 phone"><span class="mailus">Office no:</span> <a href="#">+514 502 1514</a> or <span class="mailus">Email us:</span> <a href="#">crowdfunding@gmail.com</a></p>
+                </div>
+                <div class="col-12 col-md d-flex justify-content-md-end">
+                    <div class="social-media">
+                        <p class="mb-0 d-flex">
+                            <a href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                            <a href="https://twitter.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                            <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">CROWD <span>FUNDING</span> PLATFORM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="/account" class="nav-link">Account</a></li>
+                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item cta"><a href="/logout" class="nav-link">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ftco-section">
+
+        <div class="container">
+
+            <br> <br>
+
+            <center>
+
+                <h3>Want to Submit a Project? Submit <a href="/submit">Here</a></h3>
+                <br>
+                <h1>List of Projects : </h1>
+                <br>
+                <table border="2px solid black">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Summary</th>
+                        <th>Fund</th>
+                    </tr>
+
+                    <% for(var i=0;i<data.length;i++) { %>
+                        <tr>
+                            <td>
+                                <%= data[i].projectID %>
+                            </td>
+                            <td>
+                                <%= data[i].projectName %>
+                            </td>
+                            <td>
+                                <%= data[i].projectSummary %>
+                            </td>
+                            <td>
+                                <%= data[i].projectFund %>
+                            </td>
+                        </tr>
+                        <% } %>
+                </table>
+
+            </center>
+
+        </div>
+
+    </section>
+
+    <footer class="ftco-footer ftco-footer-2 ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-footer-logo">CROWD<span>FUNDING</span>PLATFORM</h2>
+                        <p> Committed to people, Committed to future.</p>
+                        <ul class="ftco-footer-social list-unstyled mt-2">
+                            <li class="ftco-animate"><a href="twitter.com"><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="facebook.com"><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="Instagram.com"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Need to Contact Us?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map marker"></span><span class="text">577 Boul Henri-Bourassa E, Montréal, QC H2C 1E2</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+1 514 502 1234</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">crowdfunidng@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.animateNumber.min.js"></script>
+    <script src="/js/scrollax.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

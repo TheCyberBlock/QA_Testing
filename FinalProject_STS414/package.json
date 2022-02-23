@@ -1,0 +1,26 @@
+{
+  "name": "finalproject-sts414",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Repo to hold all the file for final project of STS414",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KashyapPatelHub/FinalProject-STS414.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KashyapPatelHub/FinalProject-STS414/issues"
+  },
+  "homepage": "https://github.com/KashyapPatelHub/FinalProject-STS414#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

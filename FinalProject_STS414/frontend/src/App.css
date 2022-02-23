@@ -1,0 +1,244 @@
+/* Common */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+/* ID */
+#main { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#blackLink {
+  color: black;
+}
+
+#blackLink:hover {
+  color: blue;
+}
+
+
+
+
+
+
+
+
+/* Class */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list.center {
+  justify-content: center;
+}
+
+.product {
+  border: 0.1rem solid #c0c0c0;
+  border-radius: 0.4rem;
+  margin: 20px;
+  max-width: 20rem;
+  background-color: rgb(rgba(21, 107, 146, 0.582), green, blue);
+  height: 30rem;
+}
+
+.product > * {
+  padding-bottom: 10px;
+  border-radius: 0.4rem;
+  margin: 5px;
+}
+
+.product-img > img {
+  max-width: 19rem;
+  height: 19rem;
+  border-radius: 0.4rem;
+}
+
+.product-name {
+  flex-wrap: wrap;
+  height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-details {
+  background-color: #2e40e4bb;
+  padding: 1rem;
+  height: 9rem;
+}
+
+a > .product {
+  background-color: rgb(113, 164, 206);
+}
+
+.productDetail {
+  padding: 10px;
+  text-align: left;
+}
+
+.productDetail > div {
+  margin-top: 20px;
+}
+
+.productDetail-img > img {
+  border-radius: 1rem;
+}
+
+.productDetail-qty {
+  min-width: 10px;
+}
+
+.cart {
+  border: 1px black solid;
+}
+
+.cart-row > td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.fa-plus {
+  color: green;
+}
+
+.fa-minus {
+  color: red;
+}
+
+.table-small {
+  width: 20%;
+}
+
+.btn {
+  color: white;
+  background-color: #2e40e4;
+}
+
+.btn:hover {
+  color: #2e40e4;
+  background-color: white;
+}
+
+.btn > a {
+  color: white;
+  background-color: #2e40e4;
+}
+
+.btn:hover > a {
+  color: #2e40e4;
+  background-color: white;
+}
+
+.btn-outline-error {
+  color: red;
+  background-color: white;
+}
+
+.btn-outline-update {
+  color: green;
+  background-color: white;
+}
+
+.btn-outline-success2 {
+  color: #2e40e4;
+  background-color: white;
+}
+
+.navbar-custom {
+  background-color: #2e40e4;
+  opacity: 0.99;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: white;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
+}
+
+.FormGroup {
+	margin: 0 15px 20px;
+	padding: 0;
+	border-style: none;
+	background-color: #7795f8;
+	will-change: opacity, transform;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+	border-radius: 4px;
+}
+
+.FormRow {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 15px;
+	border-top: 1px solid #819efc;
+}
+
+.StripeElement--webkit-autofill {
+	background: transparent !important;
+}
+
+.StripeElement {
+	width: 100%;
+	padding: 11px 15px 11px 0;
+}
